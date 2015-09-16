@@ -1,8 +1,6 @@
 # Software Architecture 2015-2016
 
-## Quality Care Robot
-
-## Team PT_WO2_2
+## PT_WO2_2 - Quality Care Robot
 
 
 ### Architects
