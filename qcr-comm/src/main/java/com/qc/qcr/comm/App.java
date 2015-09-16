@@ -1,4 +1,4 @@
-package com.qc.qcr;
+package com.qc.qcr.comm;
 
 /**
  * Hello world!
