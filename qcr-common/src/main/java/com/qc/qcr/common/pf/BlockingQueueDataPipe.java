@@ -19,6 +19,7 @@ public class BlockingQueueDataPipe<T> implements DataPipe<T> {
 
 		data = null;
 
+		// Keep trying to read until the queue is either empty or closed
 		while (!dataQueue.isEmpty() || !isClosedForWriting()) {
 			try {
 				data = dataQueue.poll(1000, TimeUnit.MILLISECONDS);
