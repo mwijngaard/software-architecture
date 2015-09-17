@@ -1,4 +1,4 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.pf;
 
 public abstract class AbstractActiveDataSource<T> implements DataSource<T>, Runnable {
 

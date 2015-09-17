@@ -1,6 +1,9 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.pf;
 
 import java.util.Random;
+
+import com.qc.qcr.pf.AbstractActiveDataSource;
+import com.qc.qcr.pf.DataPipe;
 
 public class NumberGenerator extends AbstractActiveDataSource<Integer> {
 

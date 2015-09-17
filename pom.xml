@@ -21,7 +21,7 @@
         <module>qcr-sensor</module>
         <module>qcr-ui</module>
         <module>qcr-ext</module>
-    <module>qcr-common</module>
+        <module>qcr-common</module>
   </modules>
 
     <build>
@@ -43,9 +43,9 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <version>4.12</version>
         </dependency>
+
     </dependencies>
     
 </project>
