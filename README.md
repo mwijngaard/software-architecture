@@ -19,4 +19,6 @@
  *under construction*
 
 ### Maven Commands
- *under construction* 
+
+* mvn test : Run the test for the module(s)
+* mvn clean package : Compile and build the jar file(s) for the module(s)
