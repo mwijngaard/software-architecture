@@ -21,7 +21,8 @@
         <module>qcr-sensor</module>
         <module>qcr-ui</module>
         <module>qcr-ext</module>
-    </modules>
+    <module>qcr-common</module>
+  </modules>
 
     <build>
         <pluginManagement>
