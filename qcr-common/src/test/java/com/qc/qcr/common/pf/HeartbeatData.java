@@ -15,14 +15,14 @@ public class HeartbeatData extends DataObject {
 		return value;
 	}
 	
-	public void setValue(Integer value) {
+	private void setValue(Integer value) {
 		this.value = value;
 	}
 	
 	public Integer getTimestamp() {
 		return timestamp;
 	}
-	public void setTimestamp(Integer timestamp) {
+	private void setTimestamp(Integer timestamp) {
 		this.timestamp = timestamp;
 	}
 

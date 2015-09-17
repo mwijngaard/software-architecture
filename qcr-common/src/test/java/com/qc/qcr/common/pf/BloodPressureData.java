@@ -1,12 +1,12 @@
 package com.qc.qcr.common.pf;
 
-public class BloodPressure extends DataObject {
+public class BloodPressureData extends DataObject {
 	static String TYPE = "bloodpressure";
 	private Integer value;
 	private Integer timestamp;
 	
-	public BloodPressure(Integer value, Integer timestamp) {
-		super(BloodPressure.TYPE);
+	public BloodPressureData(Integer value, Integer timestamp) {
+		super(BloodPressureData.TYPE);
 		this.setValue(value);
 		this.setTimestamp(timestamp);
 	}
@@ -15,14 +15,14 @@ public class BloodPressure extends DataObject {
 		return this.value;
 	}
 	
-	public void setValue(Integer value) {
+	private void setValue(Integer value) {
 		this.value = value;
 	}
 	
 	public Integer getTimestamp() {
 		return timestamp;
 	}
-	public void setTimestamp(Integer timestamp) {
+	private void setTimestamp(Integer timestamp) {
 		this.timestamp = timestamp;
 	}
 
