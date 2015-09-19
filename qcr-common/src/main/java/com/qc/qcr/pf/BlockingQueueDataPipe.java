@@ -1,4 +1,4 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.pf;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

@@ -1,4 +1,7 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.pf.filter;
+
+import com.qc.qcr.pf.AbstractActiveFilter;
+import com.qc.qcr.pf.DataPipe;
 
 public class ReportFilter extends AbstractActiveFilter<Integer, String> {
 	

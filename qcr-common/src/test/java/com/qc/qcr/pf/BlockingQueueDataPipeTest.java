@@ -1,12 +1,14 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.pf;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
+import com.qc.qcr.pf.BlockingQueueDataPipe;
+import com.qc.qcr.pf.DataPipe;
 
 public class BlockingQueueDataPipeTest {
 

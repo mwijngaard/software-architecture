@@ -1,4 +1,4 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.sensor.domain;
 
 import java.util.Date;
 

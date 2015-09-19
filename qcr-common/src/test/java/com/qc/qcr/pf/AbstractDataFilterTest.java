@@ -1,4 +1,4 @@
-package com.qc.qcr.common.pf;
+package com.qc.qcr.pf;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Queue;
 
 import org.junit.Test;
+
+import com.qc.qcr.pf.DataFilter;
+import com.qc.qcr.pf.DataPipe;
 
 import junit.framework.Assert;
 
