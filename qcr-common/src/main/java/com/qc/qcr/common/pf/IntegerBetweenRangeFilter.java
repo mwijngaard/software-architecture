@@ -12,7 +12,6 @@ public class IntegerBetweenRangeFilter implements DataFilter<Integer, Integer> {
 
 	@Override
 	public void process(DataPipe<Integer> inputPipe, DataPipe<Integer> outputPipe) {
-		// TODO pass inputs that are between 60 and 100 to a pipe
 		Integer inData = inputPipe.read();
 
 		// Check whether the data is (equal or greater than lowerBound) and
