@@ -1,4 +1,4 @@
-package com.qc.qcr.pf;
+package com.qc.qcr.pf.filter;
 
 import java.util.Arrays;
 import com.qc.qcr.pf.filter.RangeFilter;

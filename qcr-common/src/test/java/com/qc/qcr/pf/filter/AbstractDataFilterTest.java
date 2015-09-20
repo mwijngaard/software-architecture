@@ -1,16 +1,15 @@
-package com.qc.qcr.pf;
+package com.qc.qcr.pf.filter;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.qc.qcr.pf.DataFilter;
 import com.qc.qcr.pf.DataPipe;
-
-import junit.framework.Assert;
 
 public abstract class AbstractDataFilterTest<I, O> {
 
