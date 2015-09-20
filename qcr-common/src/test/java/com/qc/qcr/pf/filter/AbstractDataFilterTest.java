@@ -11,9 +11,23 @@ import org.junit.Test;
 import com.qc.qcr.pf.DataFilter;
 import com.qc.qcr.pf.DataPipe;
 
+/**
+ * This class provides a way to test {@link DataFilter} implementations. <br>
+ * Extend this class and test the filter by:
+ * <li>Pass an instance of the filter to the constructor of this class.
+ * <li>call setInputData with the data to be used as input for the filter.
+ * <li>call setExpectedOutput with the expected output of the filter.
+ * 
+ * @author Nick Lodewijks
+ *
+ * @param <I>
+ *            The input type of the filter
+ * @param <O>
+ *            The output type of the filter
+ */
 public abstract class AbstractDataFilterTest<I, O> {
 
-	private DataFilter<I, O> filter;
+	private final DataFilter<I, O> filter;
 
 	private List<I> inputData;
 	private List<O> expectedOutput;
@@ -36,14 +50,16 @@ public abstract class AbstractDataFilterTest<I, O> {
 		TestOutputDataPipe outputPipe;
 
 		inputPipe = new TestInputDataPipe(inputData);
-		outputPipe = new TestOutputDataPipe(expectedOutput);
+		outputPipe = new TestOutputDataPipe();
 
 		// Keep filtering until the input pipe is empty
 		while (!inputPipe.isEmpty()) {
+			// TODO: Make sure this loop stops at some point, currently it will
+			// keep running if the filter doesn't take from the inputPipe
 			filter.process(inputPipe, outputPipe);
 		}
 
-		outputPipe.verifyContent();
+		Assert.assertEquals(outputPipe.getData(), expectedOutput);
 	}
 
 	private class TestInputDataPipe implements DataPipe<I> {
@@ -82,20 +98,14 @@ public abstract class AbstractDataFilterTest<I, O> {
 	}
 
 	private class TestOutputDataPipe implements DataPipe<O> {
-
 		private final List<O> actualData;
-		private final List<O> expectedData;
 
-		public TestOutputDataPipe(List<O> expectedData) {
+		public TestOutputDataPipe() {
 			this.actualData = new ArrayList<O>();
-			this.expectedData = expectedData;
 		}
 
-		/**
-		 * Verify whether the pipe contains the expected data
-		 */
-		public void verifyContent() {
-			Assert.assertEquals(expectedData, actualData);
+		public List<O> getData() {
+			return actualData;
 		}
 
 		@Override

@@ -7,9 +7,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.qc.qcr.pf.BlockingQueueDataPipe;
-import com.qc.qcr.pf.DataPipe;
-
 public class BlockingQueueDataPipeTest {
 
 	private final DataPipe<String> dataPipe = new BlockingQueueDataPipe<String>();
@@ -53,6 +50,7 @@ public class BlockingQueueDataPipeTest {
 
 				String data;
 
+				// TODO: Replace sysout by (test) logger.
 				System.out.println("Reading.. ");
 				data = dataPipe.read();
 				System.out.println(" " + data);
