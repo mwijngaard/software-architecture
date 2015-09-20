@@ -1,4 +1,4 @@
-package com.qc.qcr.comm;
+package com.qc.qcr.communication;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

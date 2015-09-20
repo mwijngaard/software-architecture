@@ -17,7 +17,7 @@
 		<module>qcr-data</module>
 		<module>qcr-control</module>
 		<module>qcr-monitor</module>
-        <module>qcr-comm</module>
+        <module>qcr-communication</module>
         <module>qcr-sensor</module>
         <module>qcr-ui</module>
         <module>qcr-ext</module>

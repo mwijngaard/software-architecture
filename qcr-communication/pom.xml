@@ -10,7 +10,7 @@
   </parent>
   
   <groupId>com.qc.qcr</groupId>
-  <artifactId>qcr-comm</artifactId>
+  <artifactId>qcr-communication</artifactId>
   <version>0.1.0</version>
   <name>Quality Care Robot :: Communication Services</name>
   <url>https://github.com/NickLodewijks/software-architecture</url>
