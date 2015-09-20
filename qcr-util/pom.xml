@@ -9,9 +9,7 @@
     <version>0.1.0</version>
   </parent>
   
-  <groupId>com.qc.qcr</groupId>
   <artifactId>qcr-util</artifactId>
-  <version>0.1.0</version>
   <name>Quality Care Robot :: Utilities</name>
   <url>https://github.com/NickLodewijks/software-architecture</url>
   

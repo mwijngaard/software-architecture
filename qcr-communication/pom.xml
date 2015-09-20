@@ -9,8 +9,8 @@
     <version>0.1.0</version>
   </parent>
   
-  <artifactId>qcr-ext</artifactId>
-  <name>Quality Care Robot :: External Services</name>
+  <artifactId>qcr-communication</artifactId>
+  <name>Quality Care Robot :: Communication Services</name>
   <url>https://github.com/NickLodewijks/software-architecture</url>
   
 </project>
