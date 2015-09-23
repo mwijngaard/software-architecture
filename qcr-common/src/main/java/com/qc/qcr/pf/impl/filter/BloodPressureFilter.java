@@ -1,5 +1,8 @@
 package com.qc.qcr.pf.impl.filter;
 
+import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
+
 import com.qc.qcr.pf.AbstractActiveFilter;
 import com.qc.qcr.pf.DataPipe;
 import com.qc.qcr.pf.impl.model.LogData;
@@ -27,10 +30,16 @@ public class BloodPressureFilter extends AbstractActiveFilter<LogData<Integer>, 
 			outputPipe.closeForWriting();
 			stop();
 		}
-		else if(inData.getType() == LogDataType.BLOOD_PRESSURE) {
+		else if(inData.getType() == LogDataType.BLOOD_PRESSURE && daysBetween(inData.getDate(), Calendar.getInstance()) <= 7) {
 			sum += inData.getValue();
 			count++;
 		}
+	}
+	
+	public static long daysBetween(Calendar startDate, Calendar endDate) {
+	    long end = endDate.getTimeInMillis();
+	    long start = startDate.getTimeInMillis();
+	    return TimeUnit.MILLISECONDS.toDays(Math.abs(end - start));
 	}
 
 }
